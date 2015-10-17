@@ -32,22 +32,22 @@ vagrant ssh jekyll
 ```
 
 Setup rvm by going to the `/vagrant` directory for the first time.
-Create your new site.
+
 
 ```unix
 cd /vagrant
-jekyll new --force .
 ```
 
-Generate and view your site
+Create and generate your new site
 
 ```unix
- jekyll serve -H 192.168.33.10
+jekyll new --force .
+jekyll serve -H 192.168.33.10
 ```
 
 Click [http://192.168.33.10:4000](http://192.168.33.10:4000) to view the site
 
-Exit vagrant
+Exit Vagrant
 
 ```unix
 exit
