@@ -37,4 +37,13 @@ Create your new site.
 ```unix
 cd /vagrant
 jekyll new --force .
+exit
+```
+
+Commit your new site
+
+```unix
+echo '.vagrant' >> .gitignore
+git add .gitignore
+git commit -m "Created new site"
 ```
