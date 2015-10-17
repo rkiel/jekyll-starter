@@ -46,7 +46,7 @@ jekyll new --force .
 jekyll serve -H 192.168.33.10
 ```
 
-Click [http://192.168.33.10:4000](http://192.168.33.10:4000) to view the site
+Verify your new site is up and running by clicking [http://192.168.33.10:4000](http://192.168.33.10:4000)
 
 Exit Vagrant
 
