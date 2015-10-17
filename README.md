@@ -37,13 +37,27 @@ Create your new site.
 ```unix
 cd /vagrant
 jekyll new --force .
+```
+
+Generate and view your site
+
+```unix
+ jekyll serve -H 192.168.33.10
+```
+
+Click [http://192.168.33.10:4000](http://192.168.33.10:4000) to view the site
+
+Exit vagrant
+
+```unix
 exit
 ```
 
 Commit your new site
-
 ```unix
 echo '.vagrant' >> .gitignore
 git add .gitignore
+git add .
 git commit -m "Created new site"
 ```
+
