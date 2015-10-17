@@ -1,6 +1,6 @@
 # Installation
 
-Create working directory
+Create a working directory
 
 ```unix
 mkdir -p ~/GitHub/$USER
@@ -13,7 +13,7 @@ git clone git@github.com:rkiel/jekyll-starter.git MY_NEW_BLOG
 cd MY_NEW_BLOG
 ```
 
-My the repository your own
+Make the repository your own
 
 ```unix
 rm -rf .git
