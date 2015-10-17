@@ -41,6 +41,7 @@ cd /vagrant
 Create and generate your new site
 
 ```unix
+cd /vagrant
 jekyll new --force .
 jekyll serve -H 192.168.33.10
 ```
@@ -54,6 +55,7 @@ exit
 ```
 
 Commit your new site
+
 ```unix
 echo '.vagrant' >> .gitignore
 git add .gitignore
