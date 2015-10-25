@@ -17,12 +17,32 @@ Make the repository your own
 
 ```unix
 rm -rf .git
+echo > README.md
 git init
 git add .
 git commit -m "Initial commit"
 ```
 
 # Setup
+
+If you want to start with the Bootstrap sample blog, run the following commands.  Otherwise, skip.
+
+```unix
+cat samples/bootsrap/.gitignore >> .gitignore
+cp -r samples/bootsrap/_config.yml .
+cp -r samples/bootsrap/_includes .
+cp -r samples/bootsrap/_layouts .
+cp -r samples/bootsrap/_posts .
+cp -r samples/bootsrap/_sass .
+cp -r samples/bootsrap/about.md .
+cp -r samples/bootsrap/css .
+cp -r samples/bootsrap/feed.xml .
+cp -r samples/bootsrap/index.html .
+
+git add .gitignore
+git add _config.yml _includes _layouts _posts _sass about.md css feed.xml index.html
+git commit -m "installed sample bootstrap"
+```
 
 Start up Vagrant and login
 
@@ -38,11 +58,16 @@ Setup rvm by going to the `/vagrant` directory for the first time.
 cd /vagrant
 ```
 
-Create and generate your new site
+If you didn't start with the Bootstrap sample blog, then create your new site
 
 ```unix
 cd /vagrant
 jekyll new --force .
+```
+
+Generate your new site.
+
+```unix
 jekyll serve -H 192.168.33.10
 ```
 
